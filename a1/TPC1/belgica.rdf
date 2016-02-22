@@ -1,0 +1,334 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#"
+     xml:base="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:untitled-ontology-8="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#eProvincia -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#eProvincia">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#temProvincia"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Provincia"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#País"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#eRegião -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#eRegião">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#temRegião"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Região"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Provincia"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#temProvincia -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#temProvincia">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#temRegião -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#temRegião">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#capital -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#capital">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Provincia"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#lingua -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#lingua">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Provincia"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#nome -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#nome">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#País"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#população -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#população">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#País"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Provincia"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Região"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#área -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#área">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#País"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Provincia"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Região"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#País -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#País"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Provincia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Provincia"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Região -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Região"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Antuérpia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Antuérpia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Provincia"/>
+        <eProvincia rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Flandres"/>
+        <capital>Antuérpia</capital>
+        <nome>Antuérpia</nome>
+        <população>1 793 377</população>
+        <área>2 867</área>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Brabante_Flamengo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Brabante_Flamengo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Provincia"/>
+        <eProvincia rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Flandres"/>
+        <capital>Leuven</capital>
+        <nome>Brabante Flamengo</nome>
+        <área>1 044 133</área>
+        <área>2 106</área>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Brabante_Valão -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Brabante_Valão">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Provincia"/>
+        <eProvincia rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Valónia"/>
+        <capital>Wavre</capital>
+        <nome>Brabante Valão</nome>
+        <área>1 091</área>
+        <área>366 481</área>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Flandres -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Flandres">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Região"/>
+        <eRegião rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#belgica"/>
+        <lingua>Flamengo</lingua>
+        <nome>Flandres</nome>
+        <população>6 350 765</população>
+        <área>13 522</área>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Flandres_Ocidental -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Flandres_Ocidental">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Provincia"/>
+        <eProvincia rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Flandres"/>
+        <capital>Bruges</capital>
+        <nome>Flandres Ocidental</nome>
+        <população>1 141 866</população>
+        <área>3 144</área>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Flandres_Oriental -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Flandres_Oriental">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Provincia"/>
+        <eProvincia rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Flandres"/>
+        <capital>Gante</capital>
+        <nome>Flandres Oriental</nome>
+        <população>1 389 450</população>
+        <área>2 982</área>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Hainaut -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Hainaut">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Provincia"/>
+        <eProvincia rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Valónia"/>
+        <capital>Mons</capital>
+        <nome>Hainaut</nome>
+        <população>1 290 079</população>
+        <área>3 786</área>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Limburgo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Limburgo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Provincia"/>
+        <eProvincia rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Flandres"/>
+        <capital>Hasselt</capital>
+        <nome>Limburgo</nome>
+        <população>814 658</população>
+        <área>2 422</área>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Liège -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Liège">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Provincia"/>
+        <eProvincia rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Valónia"/>
+        <capital>Liège</capital>
+        <nome>Liège</nome>
+        <área>1 040 297</área>
+        <área>3 862</área>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Luxemburgo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Luxemburgo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Provincia"/>
+        <eProvincia rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Valónia"/>
+        <capital>Arlon</capital>
+        <nome>Luxemburgo</nome>
+        <população>258 547</população>
+        <população>4 440</população>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Namur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Namur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Provincia"/>
+        <eProvincia rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Valónia"/>
+        <capital>Namur</capital>
+        <nome>Namur</nome>
+        <população>458 574</população>
+        <área>3 666</área>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Valónia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Valónia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#Região"/>
+        <eRegião rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#belgica"/>
+        <lingua>Alemão</lingua>
+        <lingua>Francês</lingua>
+        <nome>Valónia</nome>
+        <população>3 380 498</população>
+        <área>16 844</área>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#belgica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#belgica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2016/1/untitled-ontology-8#País"/>
+        <lingua>Alemão</lingua>
+        <lingua>Flamengo</lingua>
+        <lingua>Francês</lingua>
+        <nome>Bélgica</nome>
+        <população>10 403 951</população>
+        <área>30 528</área>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+
